@@ -44,7 +44,6 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
         </nav>
 
@@ -62,7 +61,6 @@
 
         <div id="display_item">
 
-
         </div>
 
     </div>
@@ -72,4 +70,21 @@
 
     </body>
 </html>
+
+<script>
+
+$(document).ready(function () {
+
+    function load_product() {
+        $.ajax({
+            url:"fetch_item.php",
+            method:"POST",
+            success:function (data) {
+                $('#display_item').html(data);
+            }
+            })
+    }
+})
+
+</script>
 
