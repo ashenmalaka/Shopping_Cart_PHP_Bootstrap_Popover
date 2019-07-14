@@ -4,7 +4,7 @@ include('database_connection.php');
 
 $query = "SELECT * FROM products ORDER BY id DESC";
 
-$statement = $connect->prepare($query);
+$statement = $connection->prepare($query);
 
 if ($statement->execute()) {
     $result = $statement->fetchAll();

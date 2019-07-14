@@ -1,7 +1,7 @@
 <?php
 $serverName = "localhost";
 $dBUsername = "root";
-$dBPassword = "";
+$dBPassword = "cricguru";
 $dBName = "shopping";
 
 $connection = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName);

@@ -6,9 +6,9 @@
 <html>
     <head>
         <title>Shopping Cart - PHP & Bootstrap Popover</title>
-        <script src="javascript/jquery.min.js"></script>
+        <script src="js/jquery.min.js"></script>
         <link href="stylesheet" href="css/bootstrap.min.css">
-        <script src="javascript/bootstrap.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <style>
             .popover
             {
