@@ -9,6 +9,8 @@ $statement = $connection->prepare($query);
 if ($statement->execute()) {
     $result = $statement->fetchAll();
     $output = '';
+
+
     foreach ($result as $row) {
         $output .= '
 		<div class="col-md-3" style="margin-top:12px;">  
