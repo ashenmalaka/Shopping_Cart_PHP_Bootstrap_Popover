@@ -75,6 +75,8 @@
 
 $(document).ready(function () {
 
+    load_product();
+
     function load_product() {
         $.ajax({
             url:"fetch_item.php",
