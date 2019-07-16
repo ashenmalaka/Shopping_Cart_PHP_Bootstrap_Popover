@@ -77,6 +77,8 @@ $(document).ready(function () {
 
     load_product();
 
+    load_cart_data();
+
     function load_product() {
         $.ajax({
             url:"fetch_item.php",
@@ -99,6 +101,14 @@ $(document).ready(function () {
             }
         })
     }
+
+    $('#cart-popover').popover({
+       html:true,
+       container:'body',
+       content:function() {
+           return $('#popover_content_wrapper').html();
+    }
+    });
 })
 
 </script>
