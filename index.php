@@ -86,6 +86,19 @@ $(document).ready(function () {
             }
             })
     }
+
+    function load_cart_data() {
+        $.ajax({
+            url:"fetch_cart.php",
+            method:"POST",
+            dataType:"json",
+            success:function (data) {
+                $('#cart_details').html(data.cart_details);
+                $('.total_price').text(data.total_price);
+                $('.badge').text(data.total_item);
+            }
+        })
+    }
 })
 
 </script>
